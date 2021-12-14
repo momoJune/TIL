@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 첫번째인수의 길이가 len이라면 next로 가라
+	function nextObject(obj, len, next){
+		if(obj.value.length==len){
+			document.getElementById(next).focus();
+		}
+	}
+</script>
+</head>
+<body>
+	<form action="">
+		주민등록 번호 : 
+		<input type="text" name="j1" id="j1" maxlength="6" size="7" onkeyup="nextObject(this, 6, 'j2')">
+		-
+		<input type="password" name="j2" id="j2" maxlength="7" size="7" onkeyup="nextObject(this, 7, 'submitBtn')">
+		<input type="submit" value="확인" id="submitBtn">
+	</form>
+</body>
+</html>

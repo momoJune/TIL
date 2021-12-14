@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>타입(태그) 선택자</title>
+<style type="text/css">
+	/* 태그명,.... { 속성 : 값; .... } */
+	h1 { color: red; }
+	h2 { color: blue; }
+	h1, h2 { font-style: italic;} /* css는 상속된다. */
+	h2 {
+		text-decoration: underline;
+	}
+	/* 전체 선택자 */
+	* {font-size: 9pt;}
+</style>
+</head>
+<body>
+	<h1>나는 큰제목 001</h1>
+	<h1>나는 큰제목 002</h1>
+	<h1>나는 큰제목 003</h1>
+	<h1>나는 큰제목 004</h1>
+	<h1>나는 큰제목 005</h1>
+	<h2>나는 작은제목 001</h2>
+	<h2>나는 작은제목 002</h2>
+	<h2>나는 작은제목 003</h2>
+	<h2>나는 작은제목 004</h2>
+	<h2>나는 작은제목 005</h2>
+	<p>나는 문단입니다.</p>
+	<div>나는 영역입니다.</div>
+</body>
+</html>
